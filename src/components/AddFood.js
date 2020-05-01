@@ -1,14 +1,17 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
+import { createFood } from "../ducks/foodsDuck";
 
-export const AddFood = () => {
+const AddFood = ({ foodStore, createFood }) => {
   const [food, setFood] = useState({
     foodName: "",
     foodDetails: "",
   });
 
-  const saveFood = (e) => {
-    e.preventDefault();
-    console.log(food.foodName, food.foodDetails);
+  const saveFood = (event) => {
+    createFood(food);
+    event.preventDefault();
+    console.log(foodStore);
   };
 
   const updateFood = (e) => {
@@ -44,3 +47,7 @@ export const AddFood = () => {
     </form>
   );
 };
+
+const mapStateToProps = ({ foodStore }) => ({ foodStore });
+const mapDispatchToProps = { createFood };
+export default connect(mapStateToProps, mapDispatchToProps)(AddFood);
