@@ -1,22 +1,31 @@
 import React, { useState } from "react";
 
 export const AddFood = () => {
-  const [foodName, setFoodName] = useState("");
-  const [foodDetails, setFoodDetails] = useState("");
+  const [food, setFood] = useState({
+    foodName: "",
+    foodDetails: "",
+  });
 
-  const SaveFood = (e) => {
+  const saveFood = (e) => {
     e.preventDefault();
-    console.log(foodName, foodDetails);
+    console.log(food.foodName, food.foodDetails);
+  };
+
+  const updateFood = (e) => {
+    setFood({
+      ...food,
+      [e.target.name]: e.target.value,
+    });
   };
 
   return (
-    <form onSubmit={SaveFood}>
+    <form onSubmit={saveFood}>
       <label>
         Food name:
         <input
-          value={foodName}
-          onChange={(event) => setFoodName(event.target.value)}
-          name="foodname"
+          value={food.foodName}
+          onChange={updateFood}
+          name="foodName"
           type="text"
         />
       </label>
@@ -24,10 +33,10 @@ export const AddFood = () => {
       <label>
         List of ingredients / recipe:
         <input
-          value={foodDetails}
-          onChange={(event) => setFoodDetails(event.target.value)}
-          name="fooddetails"
-          type="longtext"
+          value={food.foodDetails}
+          onChange={updateFood}
+          name="foodDetails"
+          type="text"
         />
       </label>
       <br />
