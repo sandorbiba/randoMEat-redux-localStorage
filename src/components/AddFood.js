@@ -11,7 +11,6 @@ const AddFood = ({ foodStore, createFood }) => {
   const saveFood = (event) => {
     createFood(food);
     event.preventDefault();
-    console.log(foodStore);
   };
 
   const updateFood = (e) => {
