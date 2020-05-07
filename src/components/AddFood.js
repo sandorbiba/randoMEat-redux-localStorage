@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import { createFood } from "../ducks/foodsDuck";
+import { v4 as uuidv4 } from "uuid";
 
 const AddFood = ({ foodStore, createFood }) => {
   const [food, setFood] = useState({
@@ -9,7 +10,7 @@ const AddFood = ({ foodStore, createFood }) => {
   });
 
   const saveFood = (e) => {
-    createFood(food);
+    createFood({ ...food, id: uuidv4() });
     e.preventDefault();
   };
 

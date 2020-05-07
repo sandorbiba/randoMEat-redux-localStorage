@@ -6,59 +6,13 @@ import { editFoodById } from "../ducks/foodsDuck";
 const EditFood = ({ editFoodById, foodStore, match }) => {
   const editedFoodId = match.params.id;
 
-  /* const index = foodStore
-    .map((e) => {
-      return e.id;
-    })
-    .indexOf(editedFoodId); */
+  const currentFood = foodStore.find(({ id }) => id === editedFoodId);
 
-  /*   const index = foodStore.map((editedFood) => {
-    const idx = editedFood.id.toString();
-    if (idx === editedFoodId) {
-      return idx;
-    }
-    return console.log("alma");
-  }); */
-
-  /*   const index = foodStore.map((editedFood, i) => {
-    const idx = editedFood.id.toString();
-    if (idx[i] === editedFoodId) {
-      return editedFood[i];
-    }
-    return console.log("alma");
-  });
- */
-
-  /* const index = _.findIndex(parcels, function(parcel) {
-  return parcel.id.toString() === id;
-}); */
-
-  const index = foodStore.map((items) => {
-    if (
-      items.findIndex(
-        (foodStore,
-        function (item) {
-          return item.id.toString() === editedFoodId;
-        })
-      )
-    ) {
-      return items;
-    }
-    return console.log("alma");
-  });
-
-  console.log("index", index);
-
-  const [food, setFood] = useState({
-    foodName: editedFoodId && foodStore[index] ? foodStore[index].foodName : "",
-    foodDetails:
-      editedFoodId && foodStore[index] ? foodStore[index].foodDetails : "",
-    id: editedFoodId && foodStore[index] ? foodStore[index].id : "",
-  });
+  const [food, setFood] = useState(currentFood);
 
   const saveFood = (event) => {
     event.preventDefault();
-    editFoodById(food.id);
+    editFoodById(food);
   };
 
   const updateFood = (e) => {
@@ -67,6 +21,8 @@ const EditFood = ({ editFoodById, foodStore, match }) => {
       [e.target.name]: e.target.value,
     });
   };
+
+  console.log({ food });
 
   return (
     <div>

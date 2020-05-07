@@ -17,17 +17,18 @@ export default function FoodsReducer(state = initialState, action) {
 
   switch (action.type) {
     case CREATE_FOOD:
-      const id = Date.now();
-      return [...state, { ...action.payload, id }];
+      return [...state, action.payload];
     case GET_FOODS:
       return state;
     case GET_FOOD_BY_ID:
       return;
     case EDIT_FOOD_BY_ID:
-      return [
-        ...state.filter((food) => food.id !== action.payload.id),
-        action.payload,
-      ];
+      return state.map((food) => {
+        if (food.id === action.payload.id) {
+          return { ...food, ...action.payload };
+        }
+        return food;
+      });
     default:
       return state;
   }
