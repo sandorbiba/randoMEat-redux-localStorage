@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Random } from "./pages/Random";
 import { FoodControll } from "./pages/FoodControll";
-import { EditFood } from "./components/EditFood";
+import EditFood from "./components/EditFood";
 
 import "./App.css";
 

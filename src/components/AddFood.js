@@ -8,9 +8,9 @@ const AddFood = ({ foodStore, createFood }) => {
     foodDetails: "",
   });
 
-  const saveFood = (event) => {
+  const saveFood = (e) => {
     createFood(food);
-    event.preventDefault();
+    e.preventDefault();
   };
 
   const updateFood = (e) => {
