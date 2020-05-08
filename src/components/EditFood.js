@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { editFoodById } from "../ducks/foodsDuck";
 
-const EditFood = ({ editFoodById, foodStore, match }) => {
+const EditFood = ({ editFoodById, foodStore, match, history }) => {
   const editedFoodId = match.params.id;
 
   const currentFood = foodStore.find(({ id }) => id === editedFoodId);
@@ -13,6 +13,7 @@ const EditFood = ({ editFoodById, foodStore, match }) => {
   const saveFood = (event) => {
     event.preventDefault();
     editFoodById(food);
+    history.push("/foods/");
   };
 
   const updateFood = (e) => {

@@ -1,7 +1,9 @@
 import React from "react";
+import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import { deleteFoodById } from "../ducks/foodsDuck";
 
-export const FoodListCard = ({ id, foodName, foodDetails }) => {
+const FoodListCard = ({ id, foodName, foodDetails, deleteFoodById }) => {
   return (
     <div>
       <h6>{id}</h6>
@@ -11,7 +13,12 @@ export const FoodListCard = ({ id, foodName, foodDetails }) => {
         <button>Edit</button>
       </Link>
       <br />
-      <button>Delete</button>
+      <button onClick={() => deleteFoodById(id)}>Delete</button>
     </div>
   );
 };
+
+const mapStateToProps = ({ foodStore }) => ({ foodStore });
+const mapDispatchToProps = { deleteFoodById };
+
+export default connect(mapStateToProps, mapDispatchToProps)(FoodListCard);

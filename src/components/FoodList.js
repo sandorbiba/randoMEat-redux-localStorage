@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { getFoods } from "../ducks/foodsDuck";
-import { FoodListCard } from "./FoodListCard";
+import FoodListCard from "./FoodListCard";
 
 const FoodList = ({ foodStore, getFoods }) => {
   useEffect(() => {
