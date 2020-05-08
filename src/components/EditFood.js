@@ -23,8 +23,6 @@ const EditFood = ({ editFoodById, foodStore, match, history }) => {
     });
   };
 
-  console.log({ food });
-
   return (
     <div>
       <form onSubmit={saveFood}>
