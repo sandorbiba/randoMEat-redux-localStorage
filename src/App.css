@@ -1,3 +1,13 @@
 .App {
   text-align: center;
 }
+
+.center {
+  text-align: center;
+}
+
+.padding {
+  padding: 30px;
+  margin: 20px;
+  height: 60px;
+}
