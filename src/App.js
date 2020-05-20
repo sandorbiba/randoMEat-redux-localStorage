@@ -1,12 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 import { Home } from "./pages/Home";
 import RandomFood from "./pages/Random";
 import { FoodControll } from "./pages/FoodControll";
 import EditFood from "./components/EditFood";
-
-import "./App.css";
 
 function App() {
   return (

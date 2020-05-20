@@ -1,0 +1,80 @@
+<svg id="PENGUIN_version2" data-name="PENGUIN version2" xmlns="http://www.w3.org/2000/svg" width="410.19" height="684.47" viewBox="0 0 410.19 684.47">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: #041620;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #ffa822;
+      }
+
+      .cls-3, .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-4, .cls-5, .cls-7 {
+        stroke: #000;
+      }
+
+      .cls-4 {
+        stroke-width: 1.87px;
+      }
+
+      .cls-5 {
+        fill: #af5d52;
+      }
+
+      .cls-5, .cls-7 {
+        stroke-width: 0.44px;
+      }
+
+      .cls-6 {
+        stroke: #4a4949;
+        stroke-width: 1px;
+      }
+
+      .cls-8, .cls-9 {
+        font-size: 30px;
+        text-anchor: middle;
+        font-family: "PT Mono";
+      }
+
+      .cls-8 {
+        fill: #1ac0c6;
+      }
+
+      .cls-9 {
+        fill: #ff6150;
+      }
+    </style>
+  </defs>
+  <path id="body1" class="cls-1" d="M3743.21,3223.78L3812,3148l-5,465-108.99-95.81Z" transform="translate(-3698 -3012)"/>
+  <path id="body3" class="cls-1" d="M4062.98,3223.78l-64.03-75.31L4008,3614l100.18-96.81Z" transform="translate(-3698 -3012)"/>
+  <path id="foot2" class="cls-2" d="M3734.42,3695l72.39-67.08,61.48,68.55Z" transform="translate(-3698 -3012)"/>
+  <path id="foot" class="cls-2" d="M3935.76,3694.77l72.39-67.07,61.48,68.55Z" transform="translate(-3698 -3012)"/>
+  <path id="body2" class="cls-3" d="M3967.02,3106.99l33.21,42.33L4007,3613l-199.99-1,1.99-461,36.83-43.02,59.21,56.5Z" transform="translate(-3698 -3012)"/>
+  <path id="head" class="cls-1" d="M3855,3012l106,1,43,56-2.04,87-94.92-91-100.02,91-1.02-87.53Z" transform="translate(-3698 -3012)"/>
+  <g id="eye1">
+    <path id="eye01" class="cls-3" d="M3881.67,3051.05c8.58,0,15.54,10.58,15.54,23.63s-6.96,23.64-15.54,23.64-15.53-10.58-15.53-23.64S3873.09,3051.05,3881.67,3051.05Z" transform="translate(-3698 -3012)"/>
+    <path id="eye03" class="cls-4" d="M3879.76,3069.5c5.62,0,10.18,3.67,10.18,8.2s-4.56,8.21-10.18,8.21-10.18-3.68-10.18-8.21S3874.14,3069.5,3879.76,3069.5Z" transform="translate(-3698 -3012)"/>
+  </g>
+  <g id="eye2">
+    <path id="eye01-2" data-name="eye01" class="cls-3" d="M3935.22,3051.05c8.57,0,15.52,10.58,15.52,23.63s-6.95,23.64-15.52,23.64-15.52-10.58-15.52-23.64S3926.65,3051.05,3935.22,3051.05Z" transform="translate(-3698 -3012)"/>
+    <path id="eye03-2" data-name="eye03" class="cls-4" d="M3933.29,3068.46c5.62,0,10.18,3.67,10.18,8.2s-4.56,8.21-10.18,8.21-10.18-3.68-10.18-8.21S3927.67,3068.46,3933.29,3068.46Z" transform="translate(-3698 -3012)"/>
+  </g>
+  <path id="csőr_:D" data-name="csőr :D" class="cls-2" d="M3851,3114.47l57-49.47,53,50.53-55.32,49.48Z" transform="translate(-3698 -3012)"/>
+  <path class="cls-5" d="M3877,3104s17.19,23.69,30,21c13.91-2.92,28-19,28-19s-18.36,14.63-29,15C3895.64,3121.36,3877,3104,3877,3104Z" transform="translate(-3698 -3012)"/>
+  <path id="hole1" class="cls-5" d="M3900.59,3102.42c1.25,0,2.25,1.68,2.25,3.75s-1,3.76-2.25,3.76-2.25-1.68-2.25-3.76S3899.35,3102.42,3900.59,3102.42Z" transform="translate(-3698 -3012)"/>
+  <path id="hole2" class="cls-5" d="M3911.44,3102.42c1.24,0,2.25,1.68,2.25,3.75s-1.01,3.76-2.25,3.76-2.25-1.68-2.25-3.76S3910.19,3102.42,3911.44,3102.42Z" transform="translate(-3698 -3012)"/>
+  <path id="arm2" class="cls-6" d="M3725.42,3019.55c11.07-2.56,12.06,39.16,16.22,39.91,15.77,2.82,13.37,4.54,13.37,4.54L3787,3211l-36.58,22.61-2.61.97s-33.04-89.39-35.92-130.82l15.85-25.23S3714.35,3022.1,3725.42,3019.55Z" transform="translate(-3698 -3012)"/>
+  <path id="arm1" class="cls-6" d="M4054,3267l-44-36a163.95,163.95,0,0,1-25,53c-18.13,24.94-12.5,75.68-12.5,75.68l23.52-22.14s25.83-16.82,32.47-56.92C4034.28,3245.68,4054,3267,4054,3267Z" transform="translate(-3698 -3012)"/>
+  <path id="eyebrow3" class="cls-7" d="M3926.26,3046.01A20.2,20.2,0,0,1,3937,3043c4.57,0.24,9.26,3.97,11.06,4.77,0,0,2.4,1.61-1.06,1.23a29.324,29.324,0,0,0-10-3,38.776,38.776,0,0,0-11,1S3926.56,3046.02,3926.26,3046.01Z" transform="translate(-3698 -3012)"/>
+  <path id="eyebrow2" class="cls-7" d="M3892.72,3045.68a20.642,20.642,0,0,0-10.6-3.62c-4.6-.04-9.53,3.34-11.38,4.02,0,0-2.51,1.43.98,1.27a29.975,29.975,0,0,1,10.22-2.34,39.823,39.823,0,0,1,10.98,1.66S3892.41,3045.67,3892.72,3045.68Z" transform="translate(-3698 -3012)"/>
+  <text id="NO_MORE_IDK" data-name="NO MORE IDK" class="cls-8" x="203.939" y="290.718">NO<tspan x="203.939" dy="36">MORE</tspan><tspan x="203.939" dy="36">IDK</tspan></text>
+  <text id="NO_MORE_IDK-2" data-name="NO MORE IDK" class="cls-9" x="205.938" y="288.715">NO<tspan x="205.938" dy="36">MORE</tspan><tspan x="205.938" dy="36">IDK</tspan></text>
+</svg>
