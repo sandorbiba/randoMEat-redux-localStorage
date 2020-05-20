@@ -37,7 +37,7 @@ const ButtonContainer = styled.div`
   margin-right: auto;
   margin-bottom: 58vh;
   position: relative;
-  padding-top: 77px;
+  padding-top: 70px;
 `;
 
 const Penguin = styled.img`
