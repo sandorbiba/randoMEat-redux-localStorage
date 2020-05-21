@@ -62,7 +62,7 @@ export const Home = () => {
           "The Universe 💫 and Everything?",
           800,
           "It's not 42 it's RandoMEat! 💁",
-          1000,
+          1200,
         ]}
         loop={Infinity}
         wrapper="h2"

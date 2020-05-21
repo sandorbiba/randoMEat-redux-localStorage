@@ -2,6 +2,14 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { getFoods } from "../ducks/foodsDuck";
 import FoodListCard from "./FoodListCard";
+import styled from "styled-components";
+
+const Container = styled.div`
+  display: flex;
+  margin: auto;
+  max-width: 800px;
+  flex-flow: wrap;
+`;
 
 const FoodList = ({ foodStore, getFoods }) => {
   useEffect(() => {
@@ -11,9 +19,7 @@ const FoodList = ({ foodStore, getFoods }) => {
   }, [foodStore.length, getFoods]);
 
   return (
-    <div>
-      <hr />
-      <h2>This is your FoodList</h2>
+    <Container>
       {foodStore.map(({ id, foodName, foodDetails }) => (
         <FoodListCard
           key={id}
@@ -22,7 +28,7 @@ const FoodList = ({ foodStore, getFoods }) => {
           id={id}
         />
       ))}
-    </div>
+    </Container>
   );
 };
 
