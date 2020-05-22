@@ -1,8 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import AddFood from "../components/AddFood";
 import FoodList from "../components/FoodList";
 import styled from "styled-components";
+import { Penguin } from "../components/components";
 
 const Container = styled.div`
   background-image: url("bckgrnd.svg");
@@ -10,16 +10,16 @@ const Container = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const FoodControll = () => {
   return (
     <Container>
+      <Penguin alt="penguin" src="/PENGUIN02.svg" />
       <AddFood />
       <FoodList />
-      <Link to="/">
-        <button>Back</button>
-      </Link>
     </Container>
   );
 };

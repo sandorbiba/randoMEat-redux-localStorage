@@ -6,9 +6,11 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
-  margin: auto;
-  max-width: 800px;
-  flex-flow: wrap;
+  width: 600px;
+  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 `;
 
 const FoodList = ({ foodStore, getFoods }) => {
