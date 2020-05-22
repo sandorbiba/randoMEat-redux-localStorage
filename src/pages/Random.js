@@ -20,7 +20,7 @@ const PenguinContainer = styled.div``;
 
 const Penguin = styled.img`
   max-width: 324px;
-  margin-top: 60px;
+  margin-top: 40%;
 `;
 
 const FoodContainer = styled.div``;

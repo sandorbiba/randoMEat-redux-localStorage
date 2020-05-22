@@ -4,9 +4,11 @@ import { createFood } from "../ducks/foodsDuck";
 import { v4 as uuidv4 } from "uuid";
 import {
   Button,
+  SubmitButton,
   AddContainer,
   ButtonContainer,
   Input,
+  InputText,
   InputContainer,
 } from "./components";
 
@@ -30,7 +32,7 @@ const AddFood = ({ foodStore, createFood }) => {
 
   return (
     <AddContainer>
-      <InputContainer type="submit" onSubmit={saveFood}>
+      <InputContainer onSubmit={saveFood}>
         <label>
           <Input
             value={food.foodName}
@@ -38,11 +40,10 @@ const AddFood = ({ foodStore, createFood }) => {
             name="foodName"
             type="text"
             placeholder="Add your favorite 🍝 meal "
-            primary
           />
         </label>
         <label>
-          <Input
+          <InputText
             value={food.foodDetails}
             onChange={updateFood}
             name="foodDetails"
@@ -52,7 +53,7 @@ const AddFood = ({ foodStore, createFood }) => {
         </label>
         <ButtonContainer>
           <Button to="/">GO Back</Button>
-          <Button primary>Submit</Button>
+          <SubmitButton primary>Submit</SubmitButton>
         </ButtonContainer>
       </InputContainer>
     </AddContainer>

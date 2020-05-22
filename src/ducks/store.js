@@ -10,6 +10,7 @@ const loadFromStorage = () => {
   try {
     let state = JSON.parse(localStorage.getItem("state"));
     if (state == null) return undefined;
+    console.log(state);
     return state;
   } catch (e) {
     return undefined;

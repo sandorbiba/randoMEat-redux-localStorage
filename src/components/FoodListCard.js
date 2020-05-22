@@ -8,9 +8,15 @@ const Card = styled.div`
   background-color: #fff490;
   width: 170px;
   height: 170px;
-  box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 10px 2px rgba(0, 0, 1, 0.4);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
 
-  /* text-align: center;
+  position: relative;
+  border-bottom-right-radius: 80px 10px;
+
+  /* ;
   height: 200px;
   
   color: black;
@@ -19,14 +25,29 @@ const Card = styled.div`
   font-size: 15px; */
 `;
 
-const ButtonContainer = styled.div`
-  /*  margin-top: 45%; */
+const ButtonContainerLeft = styled.div`
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 0;
+  top: 0;
+`;
+const ButtonContainerRight = styled.div`
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+  top: 0;
 `;
 
 const StickerButton = styled.button`
   text-decoration: none;
-  background: none;
   border: none;
+  background: none;
+  cursor: pointer;
+  margin: 5px;
+
+
 /*   color: #ffffff;
   background: ${(props) => (props.primary ? "#1ac0c6" : "#ff6150")};
   padding: 10px;
@@ -49,22 +70,24 @@ const StickerButton = styled.button`
 const FoodListCard = ({ id, foodName, foodDetails, deleteFoodById }) => {
   return (
     <Card>
-      <h5>{foodName}</h5>
-      <h5>{foodDetails}</h5>
-      <ButtonContainer>
+      <h4>{foodName}</h4>
+      <p>{foodDetails}</p>
+      <ButtonContainerLeft>
         <Link to={`/${id}/edit`}>
           <StickerButton primary>
             <span aria-label="emoji" role="img">
-              🛠️
+              🔧
             </span>
           </StickerButton>
         </Link>
+      </ButtonContainerLeft>
+      <ButtonContainerRight>
         <StickerButton onClick={() => deleteFoodById(id)}>
           <span aria-label="emoji" role="img">
             ❌
           </span>
         </StickerButton>
-      </ButtonContainer>
+      </ButtonContainerRight>
     </Card>
   );
 };

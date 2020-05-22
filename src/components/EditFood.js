@@ -3,9 +3,11 @@ import { connect } from "react-redux";
 import { editFoodById } from "../ducks/foodsDuck";
 import {
   Button,
+  SubmitButton,
   AddContainer,
   ButtonContainer,
   Input,
+  InputText,
   InputContainer,
   Penguin,
 } from "./components";
@@ -56,7 +58,7 @@ const EditFood = ({ editFoodById, foodStore, match, history }) => {
             />
           </label>
           <label>
-            <Input
+            <InputText
               value={food.foodDetails}
               onChange={updateFood}
               name="foodDetails"
@@ -65,7 +67,7 @@ const EditFood = ({ editFoodById, foodStore, match, history }) => {
           </label>
           <ButtonContainer>
             <Button to="/foods">GO Back</Button>
-            <Button primary>Submit</Button>
+            <SubmitButton primary>Submit</SubmitButton>
           </ButtonContainer>
         </InputContainer>
       </AddContainer>
