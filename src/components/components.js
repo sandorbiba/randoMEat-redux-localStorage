@@ -19,7 +19,7 @@ export const Button = styled(Link)`
     transition: all 0.2s ease-in-out;
   }
   &:active {
-    transform: translateY(1px);
+    transform: translateY(4px);
   }
 `;
 
@@ -42,7 +42,7 @@ export const SubmitButton = styled.button.attrs({ type: "submit" })`
     transition: all 0.2s ease-in-out;
   }
   &:active {
-    transform: translateY(1.5px);
+    transform: translateY(4px);
   }
   &:focus {
     outline: 0;
@@ -111,4 +111,8 @@ export const Penguin = styled.img`
   top: 35vh;
   right: 10px;
   max-width: 274px;
+`;
+
+export const Emoji = styled.span`
+  font-style: normal;
 `;

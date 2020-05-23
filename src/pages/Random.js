@@ -78,7 +78,7 @@ const RandomFood = ({ foodStore, getFoods, history }) => {
               <h1>
                 Your randoMEal for today
                 <span aria-label="emoji" role="img">
-                  👌👇
+                  👇
                 </span>
               </h1>
               <Sticker>

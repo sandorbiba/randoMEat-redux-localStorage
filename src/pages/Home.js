@@ -1,7 +1,7 @@
 import React from "react";
 import Typical from "react-typical";
 import styled from "styled-components";
-import { Button } from "../components/components";
+import { Button, Emoji } from "../components/components";
 
 const HomeContainer = styled.div`
   text-align: center;
@@ -23,10 +23,6 @@ const BottomText = styled.h1`
   padding: 20px;
   font-style: italic;
   padding-bottom: 0px;
-`;
-
-const Emoji = styled.span`
-  font-style: normal;
 `;
 
 const ButtonContainer = styled.div`

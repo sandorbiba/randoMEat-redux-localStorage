@@ -48,7 +48,7 @@ const AddFood = ({ foodStore, createFood }) => {
             onChange={updateFood}
             name="foodDetails"
             type="text"
-            placeholder="Ingredients 🥦 recipes 🍽️"
+            placeholder="Ingredients 🥦 recipes 🥩"
           />
         </label>
         <ButtonContainer>
