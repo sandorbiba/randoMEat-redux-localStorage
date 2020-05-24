@@ -3,12 +3,11 @@ import { connect } from "react-redux";
 import { getFoods } from "../ducks/foodsDuck";
 import FoodListCard from "./FoodListCard";
 import styled from "styled-components";
-import { Emoji } from "./components";
 
 const Container = styled.div`
   display: flex;
   width: 750px;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 `;
@@ -16,8 +15,6 @@ const BottomText = styled.h1`
   margin-left: auto;
   margin-right: auto;
   padding: 0px;
-  font-style: italic;
-  padding-bottom: 0px;
   text-align: center;
 `;
 
@@ -31,10 +28,10 @@ const FoodList = ({ foodStore, getFoods }) => {
   return (
     <Container>
       <BottomText>
-        "Just collect your MEals and thank me later"
-        <Emoji aria-label="emoji" role="img">
+        Just collect your MEals and thank me later
+        <span aria-label="emoji" role="img">
           👌
-        </Emoji>
+        </span>
       </BottomText>
       {foodStore.map(({ id, foodName, foodDetails }) => (
         <FoodListCard

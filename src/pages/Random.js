@@ -5,9 +5,11 @@ import styled from "styled-components";
 import { Button } from "../components/components";
 
 const Container = styled.div`
-  background-image: url("bckgrnd.svg");
+  background-image: url("tick.png");
+  background-repeat: no-repeat;
   background-color: #dee0e6;
   height: 100vh;
+  width: 100%;
 `;
 
 const RandomContainer = styled.div`
@@ -27,7 +29,8 @@ const FoodContainer = styled.div``;
 
 const Sticker = styled.div`
   text-align: center;
-  height: 300px;
+  min-height: 300px;
+  width: 400px;
   background-color: #fff490;
   color: black;
   padding: 20px;
@@ -40,6 +43,12 @@ const Sticker = styled.div`
   -ms-transform: rotate(2deg);
   transform: rotate(2deg);
 `;
+
+const FoodNamePTag = styled.p`
+  font-weight: bold;
+`;
+
+const FoodDetailsPTag = styled.p``;
 
 const GoBackContainer = styled.div`
   text-align: center;
@@ -78,12 +87,12 @@ const RandomFood = ({ foodStore, getFoods, history }) => {
               <h1>
                 Your randoMEal for today
                 <span aria-label="emoji" role="img">
-                  👇
+                  👇🎉
                 </span>
               </h1>
               <Sticker>
-                <p> {randomFood.foodName} </p>
-                <p> {randomFood.foodDetails} </p>
+                <FoodNamePTag> {randomFood.foodName} </FoodNamePTag>
+                <FoodDetailsPTag> {randomFood.foodDetails} </FoodDetailsPTag>
               </Sticker>
               <ButtonContainer>
                 <Button primary onClick={() => resetRandom()}>

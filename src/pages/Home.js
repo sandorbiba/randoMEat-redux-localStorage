@@ -5,7 +5,7 @@ import { Button, Emoji } from "../components/components";
 
 const HomeContainer = styled.div`
   text-align: center;
-  background-image: url("bckgrnd.svg");
+  background-image: url("question.png");
   background-color: #dee0e6;
   height: 100vh;
   padding-bottom: 10px;
