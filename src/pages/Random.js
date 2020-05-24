@@ -51,17 +51,21 @@ const FoodNamePTag = styled.p`
   font-size: 22px;
 `;
 
-const FoodDetailsPTag = styled.p``;
+const FoodDetailsPTag = styled.p`
+  margin-left: 3px;
+  margin-right: 3px;
+`;
 const RandomText = styled.h1`
   font-family: "Ubuntu Mono", monospace;
 `;
 
 const GoBackContainer = styled.div`
   text-align: center;
+  font-family: "Ubuntu Mono", monospace;
 `;
 
 const ButtonContainer = styled.div`
-  margin-top: 30px;
+  margin-top: 35px;
   text-align: center;
 `;
 

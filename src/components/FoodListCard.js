@@ -34,6 +34,8 @@ const ButtonContainer = styled.div`
 
 const FoodNamePTag = styled.p`
   margin-top: 25px;
+  margin-left: 3px;
+  margin-right: 3px;
   margin-bottom: 5px;
   font-weight: bold;
   font-size: 17px;
@@ -42,6 +44,8 @@ const FoodNamePTag = styled.p`
 
 const FoodDetailsPTag = styled.p`
   margin-top: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
   font-family: "Pangolin", cursive;
 `;
 
