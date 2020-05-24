@@ -9,12 +9,16 @@ const HomeContainer = styled.div`
   background-color: #dee0e6;
   height: 100vh;
   padding-bottom: 10px;
+  background-position: center center;
+  background-size: 49%;
+  background-repeat: no-repeat;
 `;
 
 const StyledTypical = styled(Typical)`
   margin: 0px;
-  padding: 20px;
-  padding-top: 30px;
+  text-align: center;
+  padding: 25px;
+  padding-top: 35px;
   height: 40px;
 `;
 
@@ -23,6 +27,7 @@ const BottomText = styled.h1`
   padding: 20px;
   font-style: italic;
   padding-bottom: 0px;
+  font-family: "Ubuntu Mono", monospace;
 `;
 
 const ButtonContainer = styled.div`

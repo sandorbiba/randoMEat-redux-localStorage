@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Button = styled(Link)`
   color: #ffffff;
+  font-family: "Roboto", sans-serif;
   background: ${(props) => (props.primary ? "#1ac0c6" : "#ff6150")};
   padding: 18px;
   border-radius: 10px;
@@ -27,6 +28,7 @@ export const SubmitButton = styled.button.attrs({ type: "submit" })`
   color: #ffffff;
   background: #1ac0c6;
   padding: 18px;
+  font-family: "Roboto", sans-serif;
   border: none;
   border-radius: 10px;
   font-size: 17px;
@@ -61,6 +63,8 @@ export const ButtonContainer = styled.div`
 
 export const Input = styled.input`
   display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
   padding: 15px;
   margin: 20px;
   border: none;
@@ -82,6 +86,8 @@ export const Input = styled.input`
 
 export const InputText = styled.textarea`
   display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
   padding: 15px;
   margin: 20px;
   border: none;

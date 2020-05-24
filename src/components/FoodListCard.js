@@ -36,10 +36,13 @@ const FoodNamePTag = styled.p`
   margin-top: 25px;
   margin-bottom: 5px;
   font-weight: bold;
+  font-size: 17px;
+  font-family: "Pangolin", cursive;
 `;
 
 const FoodDetailsPTag = styled.p`
   margin-top: 5px;
+  font-family: "Pangolin", cursive;
 `;
 
 const StickerButton = styled.button`
@@ -61,7 +64,7 @@ const StickerButton = styled.button`
 
 const FoodListCard = ({ id, foodName, foodDetails, deleteFoodById }) => {
   return (
-    <Card bgcolor={Boolean(Math.round(Math.random()))}>
+    <Card bgcolor={Math.round(Math.random())}>
       <FoodNamePTag>{foodName}</FoodNamePTag>
       <FoodDetailsPTag>{foodDetails}</FoodDetailsPTag>
       <ButtonContainer>

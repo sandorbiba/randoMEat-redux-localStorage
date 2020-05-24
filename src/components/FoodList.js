@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { connect } from "react-redux";
-import { getFoods } from "../ducks/foodsDuck";
 import FoodListCard from "./FoodListCard";
 import styled from "styled-components";
 
@@ -16,15 +15,10 @@ const BottomText = styled.h1`
   margin-right: auto;
   padding: 0px;
   text-align: center;
+  font-family: "Ubuntu Mono", monospace;
 `;
 
-const FoodList = ({ foodStore, getFoods }) => {
-  useEffect(() => {
-    if (foodStore.length === 0) {
-      getFoods();
-    }
-  }, [foodStore.length, getFoods]);
-
+const FoodList = ({ foodStore }) => {
   return (
     <Container>
       <BottomText>
@@ -46,6 +40,6 @@ const FoodList = ({ foodStore, getFoods }) => {
 };
 
 const mapStateToProps = ({ foodStore }) => ({ foodStore });
-const mapDispatchToProps = { getFoods };
+const mapDispatchToProps = null;
 
 export default connect(mapStateToProps, mapDispatchToProps)(FoodList);

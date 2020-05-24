@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
-import { getFoods } from "../ducks/foodsDuck";
 import styled from "styled-components";
 import { Button } from "../components/components";
 
 const Container = styled.div`
   background-image: url("tick.png");
+  background-position: center center;
+  background-size: 60%;
   background-repeat: no-repeat;
   background-color: #dee0e6;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 `;
 
@@ -35,20 +36,25 @@ const Sticker = styled.div`
   color: black;
   padding: 20px;
   font-family: Satisfy;
-  font-size: 25px;
+  font-size: 18px;
   box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.3);
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
   -o-transform: rotate(2deg);
   -ms-transform: rotate(2deg);
   transform: rotate(2deg);
+  font-family: "Pangolin", cursive;
 `;
 
 const FoodNamePTag = styled.p`
   font-weight: bold;
+  font-size: 22px;
 `;
 
 const FoodDetailsPTag = styled.p``;
+const RandomText = styled.h1`
+  font-family: "Ubuntu Mono", monospace;
+`;
 
 const GoBackContainer = styled.div`
   text-align: center;
@@ -59,16 +65,10 @@ const ButtonContainer = styled.div`
   text-align: center;
 `;
 
-const RandomFood = ({ foodStore, getFoods, history }) => {
+const RandomFood = ({ foodStore, history }) => {
   const random = foodStore[Math.floor(Math.random() * foodStore.length)];
 
   const [randomFood, setRandomFood] = useState(random);
-
-  useEffect(() => {
-    if (foodStore.length === 0) {
-      getFoods();
-    }
-  }, [foodStore.length, getFoods]);
 
   const resetRandom = () => {
     setRandomFood("");
@@ -84,12 +84,12 @@ const RandomFood = ({ foodStore, getFoods, history }) => {
               <Penguin src="/PENGUIN03.svg" alt="penguin" />
             </PenguinContainer>
             <FoodContainer>
-              <h1>
+              <RandomText>
                 Your randoMEal for today
                 <span aria-label="emoji" role="img">
                   👇🎉
                 </span>
-              </h1>
+              </RandomText>
               <Sticker>
                 <FoodNamePTag> {randomFood.foodName} </FoodNamePTag>
                 <FoodDetailsPTag> {randomFood.foodDetails} </FoodDetailsPTag>
@@ -111,7 +111,7 @@ const RandomFood = ({ foodStore, getFoods, history }) => {
             <h1>
               <span aria-label="emoji" role="img">
                 👈
-              </span>{" "}
+              </span>
               Add your food and we save you from IDK
             </h1>
             <Button to="/foods">GO back</Button>
@@ -123,6 +123,5 @@ const RandomFood = ({ foodStore, getFoods, history }) => {
 };
 
 const mapStateToProps = ({ foodStore }) => ({ foodStore });
-const mapDispatchToProps = { getFoods };
-
+const mapDispatchToProps = null;
 export default connect(mapStateToProps, mapDispatchToProps)(RandomFood);

@@ -14,7 +14,10 @@ import {
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-image: url("bckgrnd.svg");
+  background-image: url("plus.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 75%;
   background-color: #dee0e6;
   min-height: 100vh;
   display: flex;
